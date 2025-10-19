@@ -16,6 +16,6 @@
 
 Khaliria é o nome de um multiverso criado dentro do jogo Conan Exiles.
 
-Sua história é rica em fantasia e magia, dentro de um cenario medieval, você pode conferir em nosso [site](https://madhatcode.github.io/Khaliria/).
+Sua história é rica em fantasia e magia, dentro de um cenario medieval, você pode conferir o [site](https://madhatcode.github.io/Khaliria/).
 
 Entre em contato pelo nosso [Discord](https://discord.gg/GbEnCjtDMy) para obter mais detalhes.
