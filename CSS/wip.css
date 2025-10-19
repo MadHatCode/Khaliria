@@ -1,0 +1,63 @@
+/* Video do Topo */
+
+.video{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60vh;
+    object-fit: fill;
+}
+
+/* Background */
+
+.container2{
+    width: 100%;
+    height: 600px;
+}
+
+.box{
+    display: flex;
+    position: relative;
+    height: 600px;
+    padding: 50px; 
+}
+
+.box-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    z-index: 1;
+}
+
+.divisoria{
+    text-align: center;
+    width: 100%;
+}
+
+/* Regras */
+
+.regras{
+    padding: 70px 70px;
+    margin: 0 50px;
+}
+
+.conteudoregras{
+    max-width: 1500px;
+    width: 98%;
+    color: white;
+    text-align: center;
+    padding: 40px 60px;
+    background-color: #02001a;
+    border-radius: 20px;
+}

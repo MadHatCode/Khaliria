@@ -4,11 +4,20 @@
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="../img/nav.png" />
-  <title>Duramor</title>
+  <title>Khal'iria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../CSS/global.css">
-  <link rel="stylesheet" href="../CSS/duramor.css">
+  <link rel="stylesheet" href="../CSS/classes.css">
+  <link rel="stylesheet" href="../CSS/in-classes.css">
 </head>
+
+<style>
+  @media (max-width: 1280px) {
+    .main {
+      height: 195rem;
+    }
+  }
+</style>
 
 <body>
   <header class="sticky">
@@ -38,7 +47,7 @@
         </a>
       </li>
       <li>
-        <a href="../wip.html">
+        <a href="../classes.html">
           <h2>Classes</h2>
         </a>
       </li>
@@ -54,8 +63,7 @@
   <div class="video">
     <video src="../img/vid2.mp4" autoplay muted loop></video>
     <div class="content">
-
-      <h1>Duramor</h1>
+      <h1>Guerreiro</h1>
     </div>
   </div>
 
@@ -66,21 +74,46 @@
           <div class="divisoria">
             <hr color="027fb3" size="4">
           </div>
-
-          <div class="duramor-container">
-            <a href="../reinos.html" class="voltar">Voltar</a>
-            <div class="duramor">
-              <img src="../img-reinos/duramor.png" alt="imagem reino de duramor">
-              <div class="textos">
-                <h1>“As Montanhas Brancas”</h1>
-                <p>Em um perfeito contraste, Duramor conseguiu se tornar um local de paz por conta daqueles que vieram
-                  lhe
-                  chamar de lar, habitada por um grupo que almeja apenas a prosperidade ao lado da natureza e por outro
-                  que vive em busca de tesouros e riquezas. Dois povos que se aliaram olhando além da diferença de
-                  objetivos ou de tamanho, unidos apenas pelo desejo de uma vida sem guerras ou batalhas.</p>
+          <div class="in-classe-container">
+            
+            <div class="img-container">
+              <a href="../classes.html" class="btn-voltar">Voltar</a>
+              <div class="in-class-card">
+                <img src="../img-classes/guerreiro.png" alt="Imagem Clérigo">
+                <div class="textos-container">
+                  <h1> Classe: Guerreiro</h1>
+                  <p> Especialistas em combates corpo-a-corpo com qualquer tipo de armas que precise de força física. </p>
+                  <h4> ❇ Atributo Primário: Força </h4>
+                  <h4> ❇ Atributo secundário: Vitalidade </h4>
+                  <h4> ❇ Armadura: Todas </h4>
+                  <h4> ❇ Armas: Machado 1h, Machado 2h, Maça, Martelo, Lança, Espada 1h, Espada 2h </h4>
+                </div>
+              </div>
+              <div class="in-class-card">
+                <img src="../img-classes/bruto.png" alt="Imagem Clérigo">
+                <div class="textos-container">
+                  <h1> Sub-Classe: Bruto </h1>
+                  <p> Nascidos com a pura força física bruta, manejam seus grandes machados de guerra e martelos sem forma definida, o que não possuem de técnicas marciais, compensam com instintos e a arte de rachar crânios.  </p>
+                  <h4> ❇ Atributo primário: Força </h4>
+                  <h4> ❇ Atributo secundário: Vitalidade </h4>
+                  <h4> ❇ Armaduras: Leves e Médias </h4>
+                  <h4> ❇ Armas: Machados de uma mão, Grandes Machados de Guerra, Machados de arremesso, Martelos de Guerra e Maças. </h4>
+                </div>
+              </div>
+              <div class="in-class-card">
+                <img src="../img-classes/cavaleiro.png" alt="Imagem Clérigo">
+                <div class="textos-container">
+                  <h1> Sub-Classe: Cavaleiro</h1>
+                  <p>Um Cavaleiro depois de anos de treinamento militar, se torna um especialista em situações de guerra. Com mais resistência e capacidade de absorver golpes, detém menos poder em seus ataques, mas compensa com técnicas marciais. </p>
+                  <h4> ❇ Atributo primário: Força </h4>
+                  <h4> ❇ Atributo secundário: Vitalidade  </h4>
+                  <h4> ❇ Armaduras: Todas </h4>
+                  <h4> ❇ Armas: Espadas de uma mão, Espadas de Duas mãos, Lanças e Hastes </h4>
+                </div>
               </div>
             </div>
           </div>
+
 
           <!-- Footer  -->
           <footer class="footer">
@@ -90,7 +123,7 @@
               </svg>
             </a>
             <div class="footer-content">
-              <img src="img/MHC-NBG.png" alt="Logo" class="footer-logo">
+              <img src="../img/MHC-NBG.png" alt="Logo" class="footer-logo">
               <div class="footer-text">
                 <p>© 2025 Mad Hat Code ・ Todos os direitos reservados</p>
                 <a href="https://www.iubenda.com/privacy-policy/53907478" class="privacy-link" target="_blank">Política de Privacidade</a>

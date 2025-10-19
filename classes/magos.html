@@ -3,16 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="img/nav.png" />
+  <link rel="shortcut icon" href="../img/nav.png" />
   <title>Khal'iria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="CSS/global.css">
-  <link rel="stylesheet" href="CSS/reinos.css">
+  <link rel="stylesheet" href="../CSS/global.css">
+  <link rel="stylesheet" href="../CSS/classes.css">
+  <link rel="stylesheet" href="../CSS/in-classes.css">
 </head>
+
+<style>
+  @media (max-width: 1280px) {
+    .main {
+      height: 175rem;
+    }
+  }
+</style>
 
 <body>
   <header class="sticky">
-    <a class="logo" href="index.html"></a>
+    <a class="logo" href="../index.html"></a>
 
     <input type="checkbox" class="menu-faketrigger" />
 
@@ -23,27 +32,27 @@
     </div>
     <div class="container">
       <li>
-        <a href="historias.html">
+        <a href="../historias.html">
           <h2>Histórias</h2>
         </a>
       </li>
       <li>
-        <a href="racas.html">
+        <a href="../racas.html">
           <h2>Raças</h2>
         </a>
       </li>
       <li>
-        <a href="reinos.html">
+        <a href="../reinos.html">
           <h2>Reinos</h2>
         </a>
       </li>
       <li>
-        <a href="classes.html">
+        <a href="../classes.html">
           <h2>Classes</h2>
         </a>
       </li>
       <li>
-        <a href="profissoes.html">
+        <a href="../profissoes.html">
           <h2>Profissões</h2>
         </a>
       </li>
@@ -52,9 +61,9 @@
   </header>
 
   <div class="video">
-    <video src="img/vid2.mp4" autoplay muted loop></video>
+    <video src="../img/vid2.mp4" autoplay muted loop></video>
     <div class="content">
-      <h1>Reinos</h1>
+      <h1>Mago</h1>
     </div>
   </div>
 
@@ -65,36 +74,46 @@
           <div class="divisoria">
             <hr color="027fb3" size="4">
           </div>
-          <div class="reinos-container">
-
-            <div class="card-reino">
-              <a href="reinos.html">
-                <img src="img-reinos/duramor.png" alt="">
-                <h1>Duramor</h1>
-              </a>
-            </div>
-
-            <div class="card-reino">
-              <a href="reinos.html">
-                <img src="img-reinos/elyria.png" alt="">
-                <h1>Elyria</h1>
-              </a>
-            </div>
-
-            <div class="card-reino">
-              <a href="reinos.html">
-                <img src="img-reinos/kor-graesh.png" alt="">
-                <h1>Kor'Graesh</h1>
-              </a>
-            </div>
-
-            <div class="card-reino">
-              <a href="reinos.html">
-                <img src="img-reinos/tesseralia.png" alt="">
-                <h1>Tesserália</h1>
-              </a>
+          <div class="in-classe-container">
+            
+            <div class="img-container">
+              <a href="../classes.html" class="btn-voltar">Voltar</a>
+              <div class="in-class-card">
+                <img src="../img-classes/mago.png" alt="Imagem Clérigo">
+                <div class="textos-container">
+                  <h1> Classe: Mago</h1>
+                  <p> Em sua maioria, magos são acadêmicos que através de sua inteligência conseguiram, mesmo que de forma ainda tímida, controlar e usar os elementos como armas. </p>
+                  <h4> ❇ Atributo primário: Coragem </h4>
+                  <h4> ❇ Atributo secundário: Vitalidade </h4>
+                  <h4> ❇ Armaduras: Leves </h4>
+                  <h4> ❇ Armas: Espadas de uma mão, Espadas Curtas e Magias. </h4>
+                </div>
+              </div>
+              <div class="in-class-card">
+                <img src="../img-classes/piromante.png" alt="Imagem Clérigo">
+                <div class="textos-container">
+                  <h1> Sub-Classe: Piromante </h1>
+                  <p> Dedicado apenas ao elemento de fogo, um Piromante causa grande quantidade de dano mágico destrutivo. </p>
+                  <h4> ❇ Atributo primário: Coragem </h4>
+                  <h4> ❇ Atributo secundário: Vitalidade </h4>
+                  <h4> ❇ Armaduras: Leves </h4>
+                  <h4> ❇ Armas: Espadas de uma mão, Espadas Curtas e Magias de Fogo. </h4>
+                </div>
+              </div>
+              <div class="in-class-card">
+                <img src="../img-classes/criomante.png" alt="Imagem Clérigo">
+                <div class="textos-container">
+                  <h1> Sub-Classe: Criomante</h1>
+                  <p> Especialista nas magias de gelo, os Criomantes controlam o campo de batalha e decidem quem pode ou não se mover. </p>
+                  <h4> ❇ Atributo principal: Coragem </h4>
+                  <h4> ❇ Atributo secundário: Vitalidade </h4>
+                  <h4> ❇ Armaduras: Leves </h4>
+                  <h4> ❇ Armas: Espadas de uma mão, Espadas Curtas, e Magias de Gelo. </h4>
+                </div>
+              </div>
             </div>
           </div>
+
 
           <!-- Footer  -->
           <footer class="footer">
@@ -104,7 +123,7 @@
               </svg>
             </a>
             <div class="footer-content">
-              <img src="img/MHC-NBG.png" alt="Logo" class="footer-logo">
+              <img src="../img/MHC-NBG.png" alt="Logo" class="footer-logo">
               <div class="footer-text">
                 <p>© 2025 Mad Hat Code ・ Todos os direitos reservados</p>
                 <a href="https://www.iubenda.com/privacy-policy/53907478" class="privacy-link" target="_blank">Política de Privacidade</a>
@@ -116,6 +135,6 @@
       </div>
     </div>
   </main>
-  
+
 </body>
 </html>
