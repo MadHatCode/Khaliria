@@ -1,0 +1,158 @@
+/* Fonts Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap');
+
+/* Video do Topo */
+
+.video {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.video video {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.box-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  height: 400rem;
+  background-image: url(../img/back1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 350px;
+}
+
+.container2 {
+  width: 100%;
+  height: 110rem;
+}
+
+.box {
+  display: flex;
+  position: relative;
+  height: 600px;
+  padding: 50px;
+  margin: auto;
+}
+
+.divisoria {
+  text-align: center;
+  width: 100%;
+}
+
+/* Cards */
+
+.raca-container {
+  display: grid;
+  grid-area: auto;
+  grid-template-columns: 70rem;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  padding-right: 6rem;
+}
+
+.card-raca {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  text-decoration: none;
+}
+
+.card-raca img {
+  height: auto;
+  width: 80rem;
+  transition: .5s;
+  border-radius: 1rem;
+}
+
+.card-raca img:hover{
+  transform: scale(1.05);
+}
+
+.raca-nome {
+  position: absolute;
+  color: #ffffff;
+  font-size: 3.5rem;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  margin-top: -10rem;
+  margin-left: 5rem;
+  font-family: 'Courgette', cursive;
+}
+
+@media (max-width: 2200px) {
+  .raca-container {
+    grid-template-columns: 50rem;
+  }
+
+  .raca-nome {
+    margin-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  .card-raca img {
+    width: 55rem;
+  }
+
+  .raca-container {
+    padding-right: 3rem;
+  }
+
+  .main {
+    height: 305rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main{
+    height: 130rem;
+  }
+
+  .raca-container {
+    grid-template-columns: 19rem;
+    margin-top: 0;
+  }
+
+  .raca-nome {
+    max-width: 19rem;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-raca img {
+    width: 22rem;
+  }
+
+  .card-raca{
+    margin: 2em 0 2rem 0;
+  }
+
+  .raca-container {
+    padding-right: 3rem;
+  }
+
+  .raca-nome{
+    margin-top: -5.5rem;
+    padding-right: 12rem;
+    font-size: 2rem;
+    font-family: 'Courgette', cursive;
+  }
+}

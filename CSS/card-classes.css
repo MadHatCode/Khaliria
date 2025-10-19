@@ -1,0 +1,134 @@
+:root {
+  --card-height: 25rem;
+  --card-width: 25rem;
+}
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+.wrapper::before {
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+.wrapper::after {
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+}
+
+.card:hover .wrapper::after {
+  height: 120px;
+}
+.card h1 {
+  transition: transform 0.5s;
+}
+.card:hover h1 {
+  transform: translate3d(0%, -50px, 256px);
+}
+
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+.card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -14%, 512px);
+}
+
+.card h1{
+  text-decoration: none;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.cardA{
+  text-decoration: none;
+}
+
+.classes-container{
+  display: grid;
+  grid-area: auto;
+  grid-template-columns: 25rem 25rem;
+  justify-content: space-evenly;
+  margin: 8rem 35rem 0 35rem;
+  gap: 6rem;
+}
+
+@media (max-width: 1280px) {
+  .classes-container{
+    grid-template-columns: 17rem;
+    gap: 6rem;
+    margin: 5rem auto;
+  }
+  
+  .main{
+    height: 140rem;
+  }
+  .card{
+    width: 17rem;
+    height: 17rem;
+    margin: auto;
+  }
+}

@@ -1,0 +1,91 @@
+.main {
+  height: 110rem;
+}
+
+.container2 {
+  height: 100%;
+}
+
+.in-classe-container {
+  display: flex;
+  width: 75rem;
+  margin: auto;
+}
+
+.in-classe-container img {
+  width: 30rem;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container img {
+  border-radius: .5rem;
+}
+
+.in-class-card {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.in-class-card h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.textos-container {
+  margin: auto 0;
+  margin: auto 0 auto 2rem;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  gap: 5rem;
+  line-height: 2.5rem;
+}
+
+.textos-container h4 {
+  margin: 1rem 0 0 0;
+}
+
+.btn-voltar {
+  margin: 2rem 0 0 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  font-family: 'Aladin', cursive;
+  transition: .5s;
+  width: 2rem;
+}
+
+.btn-voltar:hover {
+  color: #a329e9;
+}
+
+@media (max-width: 1280px) {
+
+  .in-classe-container {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .in-classe-container img {
+    width: 18rem;
+    margin-bottom: 1rem;
+  }
+
+  .in-class-card {
+    display: inline;
+    text-align: center;
+  }
+
+  .textos-container {
+    width: 18rem;
+    margin: 0 auto 0 auto;
+  }
+
+  .btn-voltar {
+    margin: 2rem 0 0 12rem;
+  }
+}

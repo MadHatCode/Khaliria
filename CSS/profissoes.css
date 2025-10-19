@@ -1,0 +1,176 @@
+/* Video do Topo */
+
+.video{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+/* Main */
+
+.container2 {
+	width: 100%;
+	height: 120rem;
+}
+
+.box {
+	display: flex;
+	position: relative;
+	height: 600px;
+	padding: 50px;
+	margin: auto;
+}
+
+.box-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	justify-content: center;
+}
+
+.divisoria {
+	text-align: center;
+	width: 100%;
+}
+
+/* Cards */
+
+.flip-card{
+	text-align: center;
+}
+
+.flip-card-front img {
+	width: 400px;
+	height: 500px;
+}
+
+.flip-card-back ul h2 {
+	color: white;
+	float: center;
+	font-size: 25px;
+	margin: 7px;
+}
+
+.flip-card-back h3 {
+	margin-top: 2rem;
+}
+
+.flip-card {
+	float: left;
+	margin-top: 50px;
+	width: 400px;
+	height: 500px;
+	background-color: transparent;
+	border: 0px solid #f1f1f1;
+	perspective: 1000px;
+	justify-content: center;
+	/* Remove this if you don't want the 3D effect */
+	position: relative;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.75s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	/* Safari */
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	background-image: url('../img/page1.png');
+	color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+	background-image: url('../img/page1.png');
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.cards-container{
+	display: grid;
+	grid-area: auto;
+	grid-template-columns: 30rem 30rem 30rem;
+	justify-content: center;
+}
+
+.cards-container .flip-card{
+	margin: 4rem auto;
+	justify-content: center;
+}
+
+ul{
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+ul{
+	letter-spacing: 3px;
+}
+
+@media (max-width: 1480px) {
+	.cards-container{
+		grid-template-columns: 30rem 30rem;
+	}
+
+	.container2{
+		height: 160rem;
+	}
+}
+
+@media (max-width: 980px) {
+	.cards-container{
+		grid-template-columns: 30rem;
+	}
+	
+	.container2{
+		height: 260rem;
+	}
+
+	.flip-card-front img {
+		width: 18rem;
+		height: 28rem;
+	}
+
+	.flip-card{
+		width: 18rem;
+		height: 28rem;
+	}
+
+	ul{
+		letter-spacing: 0px;
+	}
+}
