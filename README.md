@@ -12,10 +12,13 @@
     </a>  
 </p>
 
-## :dizzy: **Informações**
+#
+<br>
 
-Khaliria é o nome de um multiverso criado dentro do jogo Conan Exiles.
+<h1 align="center">
 
-Sua história é rica em fantasia e magia, dentro de um cenario medieval, você pode conferir o [site](https://madhatcode.github.io/Khaliria/).
-
-Entre em contato pelo nosso [Discord](https://discord.gg/GbEnCjtDMy) para obter mais detalhes.
+<a href="https://discord.gg/GbEnCjtDMy" target="_blank"> 
+<img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a>
+<a href="https://madhatcode.github.io/Khaliria" target="_blank"> 
+<img src="https://img.shields.io/badge/Site-1e90ff?style=for-the-badge">
+<br><br>
