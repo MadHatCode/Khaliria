@@ -103,6 +103,7 @@ header .logo {
     font-weight: 500px;
     transition: 0.6s;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .container li:hover {
@@ -131,7 +132,7 @@ header .logo {
     opacity: 1;
 }
 
-/* Rodape */
+/* Footer */
 
 .footer {
     background-color: #02001a;
@@ -143,23 +144,6 @@ header .logo {
     font-size: 20px;
     padding: 70px 0;
     /* display: flex; */
-}
-
-.footer a {
-    color: #ffffff;
-    margin-left: .5rem;
-    margin-right: .5rem;
-    font-size: 2.8rem;
-    transition: 0.4s;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #a329e9;
-}
-
-.footer p {
-    margin-top: 1rem;
 }
 
 .footer-content {
@@ -196,6 +180,20 @@ header .logo {
 
 .footer .privacy-link:hover {
   text-decoration: underline;
+}
+
+.footer a {
+    color: #ffffff;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #a329e9;
+}
+
+.footer p {
+    margin-top: 0.2rem;
 }
 
 .social {
