@@ -3,7 +3,7 @@
     <img src="img/MHC-NBG.png" alt="MDC" width="40%">
 </h1>
 
-<p align="center">Esse site contém elementos Um site com finalidade de apresentar o conteúdo feito para o servidor Khaliria.</p>
+<p align="center">É um projeto de site desenvolvido para apresentar um universo de fantasia. O projeto foi criado com foco em identidade visual, navegação simples e experiência imersiva.</p>
 
 <p align="center">
     <a href="https://discord.gg/GbEnCjtDMy"><img src="https://img.shields.io/discord/829042103295410197?color=%237289DA&label=MHC&logo=discord&logoColor=white" alt="Discord"></a>
